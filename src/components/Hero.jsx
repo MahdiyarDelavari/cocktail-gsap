@@ -20,7 +20,9 @@ const Hero = () => {
             yPercent: 100,
             duration: 1.8,
             ease: 'expo.out',
-            stagger: 0.05
+            stagger: 0.05,
+            delay: 0.3,
+            opacity:0
         })
         
         gsap.from(paragraphSplit.lines, {
@@ -29,7 +31,7 @@ const Hero = () => {
             duration: 1.8,
             ease: 'expo.out',
             stagger: 0.05,
-            delay:1
+            delay:1.3
             
             
         })
@@ -47,7 +49,7 @@ const Hero = () => {
         
         
         const startValue = isMobile ? 'top 50%' : 'center 60%';
-        const endValue = isMobile ? '120% top' : 'bottom top'
+        const endValue = isMobile ? '120% top' : 'bottom top';
 
 
 
